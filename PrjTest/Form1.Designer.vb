@@ -28,8 +28,9 @@ Partial Class Test
         Me.btnTeeth = New System.Windows.Forms.Button()
         Me.btnStar = New System.Windows.Forms.Button()
         Me.btnYell = New System.Windows.Forms.Button()
-        Me.UCtrlEmotion = New PrjFaces.UCtrlEmotion()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.UCtrlEmotion = New PrjFaces.UCtrlEmotion()
+        Me.UBulb = New PrjLightBulb.UBulb()
         Me.SuspendLayout()
         '
         'btnConfused
@@ -86,13 +87,6 @@ Partial Class Test
         Me.btnYell.Text = "Yell"
         Me.btnYell.UseVisualStyleBackColor = True
         '
-        'UCtrlEmotion
-        '
-        Me.UCtrlEmotion.Location = New System.Drawing.Point(178, 139)
-        Me.UCtrlEmotion.Name = "UCtrlEmotion"
-        Me.UCtrlEmotion.Size = New System.Drawing.Size(120, 103)
-        Me.UCtrlEmotion.TabIndex = 0
-        '
         'btnClear
         '
         Me.btnClear.Location = New System.Drawing.Point(486, 318)
@@ -102,11 +96,26 @@ Partial Class Test
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'UCtrlEmotion
+        '
+        Me.UCtrlEmotion.Location = New System.Drawing.Point(12, 12)
+        Me.UCtrlEmotion.Name = "UCtrlEmotion"
+        Me.UCtrlEmotion.Size = New System.Drawing.Size(92, 66)
+        Me.UCtrlEmotion.TabIndex = 0
+        '
+        'UBulb
+        '
+        Me.UBulb.Location = New System.Drawing.Point(222, 66)
+        Me.UBulb.Name = "UBulb"
+        Me.UBulb.Size = New System.Drawing.Size(173, 263)
+        Me.UBulb.TabIndex = 8
+        '
         'Test
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(694, 421)
+        Me.ClientSize = New System.Drawing.Size(729, 482)
+        Me.Controls.Add(Me.UBulb)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnStar)
@@ -129,4 +138,5 @@ Partial Class Test
     Friend WithEvents btnStar As Button
     Friend WithEvents btnYell As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents UBulb As PrjLightBulb.UBulb
 End Class

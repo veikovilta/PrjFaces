@@ -26,4 +26,8 @@
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         UCtrlEmotion.setMood("clear")
     End Sub
+
+    Private Sub UBulb_Load(sender As Object, e As EventArgs) Handles UBulb.Load
+        UBulb.setMode("off")
+    End Sub
 End Class
