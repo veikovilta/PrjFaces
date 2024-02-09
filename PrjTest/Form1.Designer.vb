@@ -29,6 +29,7 @@ Partial Class Test
         Me.btnStar = New System.Windows.Forms.Button()
         Me.btnYell = New System.Windows.Forms.Button()
         Me.UCtrlEmotion = New PrjFaces.UCtrlEmotion()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnConfused
@@ -92,11 +93,21 @@ Partial Class Test
         Me.UCtrlEmotion.Size = New System.Drawing.Size(120, 103)
         Me.UCtrlEmotion.TabIndex = 0
         '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(486, 318)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(133, 36)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'Test
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(694, 361)
+        Me.ClientSize = New System.Drawing.Size(694, 421)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnStar)
         Me.Controls.Add(Me.btnTeeth)
@@ -117,4 +128,5 @@ Partial Class Test
     Friend WithEvents btnTeeth As Button
     Friend WithEvents btnStar As Button
     Friend WithEvents btnYell As Button
+    Friend WithEvents btnClear As Button
 End Class

@@ -18,6 +18,9 @@
                 Me.selectMood(4)
             Case "yell"
                 Me.selectMood(5)
+            Case "clear"
+                pbEmotion.Image.Dispose()
+                pbEmotion.Image = Nothing
             Case Else
                 Me.selectMood(0)
         End Select
