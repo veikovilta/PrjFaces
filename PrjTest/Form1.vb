@@ -1,4 +1,6 @@
-﻿Public Class Test
+﻿Imports PrjSwitch
+
+Public Class Test
     Private Sub btnConfused_Click(sender As Object, e As EventArgs) Handles btnConfused.Click
         UCtrlEmotion.setMood("confused")
     End Sub
@@ -29,5 +31,17 @@
 
     Private Sub UBulb_Load(sender As Object, e As EventArgs) Handles UBulb.Load
         UBulb.setMode("off")
+    End Sub
+
+    Private Sub USwitch1_Load(sender As Object, e As EventArgs) Handles USwitch.Load
+        USwitch.setSwitch("off")
+    End Sub
+
+    Private Sub USwitch1_SwitchStateChanged(state As Integer) Handles USwitch.SwitchStateChanged
+        If state = 1 Then
+            UBulb.setMode("on")
+        ElseIf state = 0 Then
+            UBulb.setMode("off")
+        End If
     End Sub
 End Class

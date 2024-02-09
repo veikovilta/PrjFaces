@@ -31,6 +31,7 @@ Partial Class Test
         Me.btnClear = New System.Windows.Forms.Button()
         Me.UCtrlEmotion = New PrjFaces.UCtrlEmotion()
         Me.UBulb = New PrjLightBulb.UBulb()
+        Me.USwitch = New PrjSwitch.USwitch()
         Me.SuspendLayout()
         '
         'btnConfused
@@ -110,11 +111,19 @@ Partial Class Test
         Me.UBulb.Size = New System.Drawing.Size(173, 263)
         Me.UBulb.TabIndex = 8
         '
+        'USwitch
+        '
+        Me.USwitch.Location = New System.Drawing.Point(255, 335)
+        Me.USwitch.Name = "USwitch"
+        Me.USwitch.Size = New System.Drawing.Size(101, 41)
+        Me.USwitch.TabIndex = 9
+        '
         'Test
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(729, 482)
+        Me.Controls.Add(Me.USwitch)
         Me.Controls.Add(Me.UBulb)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnYell)
@@ -139,4 +148,5 @@ Partial Class Test
     Friend WithEvents btnYell As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents UBulb As PrjLightBulb.UBulb
+    Friend WithEvents USwitch As PrjSwitch.USwitch
 End Class
