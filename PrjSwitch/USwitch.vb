@@ -5,6 +5,11 @@
     Public Event SwitchStateChanged(state As Integer)
 
     Private Sub selectSwState(ByVal intstate As Integer)
+        If Not IsNothing(pbSwitch.Image) Then
+            pbSwitch.Image.Dispose()
+            pbSwitch.Image = Nothing
+        End If
+
         pbSwitch.Image = imgSwitches.Images(intstate)
     End Sub
 

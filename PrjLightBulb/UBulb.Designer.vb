@@ -39,18 +39,20 @@ Partial Class UBulb
         'pbBulb
         '
         Me.pbBulb.Location = New System.Drawing.Point(0, 0)
+        Me.pbBulb.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pbBulb.Name = "pbBulb"
-        Me.pbBulb.Size = New System.Drawing.Size(172, 262)
+        Me.pbBulb.Size = New System.Drawing.Size(258, 403)
         Me.pbBulb.TabIndex = 0
         Me.pbBulb.TabStop = False
         '
         'UBulb
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pbBulb)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "UBulb"
-        Me.Size = New System.Drawing.Size(173, 263)
+        Me.Size = New System.Drawing.Size(260, 405)
         CType(Me.pbBulb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

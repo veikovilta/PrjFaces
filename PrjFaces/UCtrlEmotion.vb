@@ -19,10 +19,16 @@
             Case "yell"
                 Me.selectMood(5)
             Case "clear"
-                pbEmotion.Image.Dispose()
-                pbEmotion.Image = Nothing
+                If Not IsNothing(pbEmotion.Image) Then
+                    pbEmotion.Image.Dispose()
+                    pbEmotion.Image = Nothing
+                End If
             Case Else
                 Me.selectMood(0)
         End Select
+    End Sub
+
+    Private Sub pbEmotion_Click(sender As Object, e As EventArgs) Handles pbEmotion.Click
+
     End Sub
 End Class
